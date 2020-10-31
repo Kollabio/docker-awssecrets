@@ -3,7 +3,7 @@ const argv = require("minimist")(process.argv.slice(2));
 
 const {
   secret,
-  region = "eu-west-1",
+  region = "us-east-1",
   AWS_ACCESS_KEY_ID: accessKeyId,
   AWS_SECRET_ACCESS_KEY: secretAccessKey,
 } = argv;

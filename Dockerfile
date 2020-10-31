@@ -1,7 +1,8 @@
-FROM node:8.15-alpine
+FROM node:14.14-alpine
 
-WORKDIR /usr/bin/ci-secrets
+WORKDIR /usr/bin/kkubes-secrets
 COPY . .
-RUN npm install -g .
+RUN chmod +x ./awssecrets
+RUN yarn install --ignore-scripts --frozen-lock-file --non-interactive
 
 CMD ["awssecrets"]
