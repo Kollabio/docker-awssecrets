@@ -1,6 +1,8 @@
 const AWS = require("aws-sdk");
 const argv = require("minimist")(process.argv.slice(2));
 
+//console.log( "Process Arguments ---> " + process.argv);
+
 const {
   secret,
   region = "us-east-1",
@@ -13,6 +15,9 @@ const SecretId = secret;
 const params = { region };
 if (accessKeyId) Object.assign(params, { accessKeyId });
 if (secretAccessKey) Object.assign(params, { secretAccessKey });
+
+//console.log( "ENV:Access Id = " + process.env.AWS_ACCESS_KEY_ID );
+//console.log( "ENV:Secret Key = " + process.env.AWS_SECRET_ACCESS_KEY );
 
 const client = new AWS.SecretsManager(params);
 

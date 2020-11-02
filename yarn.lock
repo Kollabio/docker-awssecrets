@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-aws-sdk@^2.387.0:
+aws-sdk@^2.783.0:
   version "2.783.0"
   resolved "https://registry.mysmartgov.net/aws-sdk/-/aws-sdk-2.783.0.tgz#f6a2fb2d1af2e7c5a6ec2959436499ff5b6c705b"
   integrity sha512-u3/ZvY/ag1hEkPpgBJxypWRGf8930prIDOWk221pgH0WhlRA9qp3IE8D0j/BKFei0giqlxbN/AB05RITp/XlwQ==
